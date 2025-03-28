@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Flatacuties</title>
@@ -8,19 +9,14 @@
       <h1>Flatacuties</h1>
     </div>
 
-    <div id="character-bar">
-      
-    </div>
+    <div id="character-bar"></div>
 
     <div class="characterInfo">
       <div id="detailed-info">
-        <p id="name">Character's Name</p>
-        <img
-          id="image"
-          src="assets/dummy.gif"
-          alt="Character's Name"
-        />
+        <p id="character-name">Character's Name</p>
+        <img id="image" src="assets/dummy.gif" alt="Character's Name" />
         <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
+
         <form id="votes-form">
           <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
           <input type="submit" value="Add Votes" />
@@ -28,21 +24,21 @@
         <button id="reset-btn">Reset Votes</button>
       </div>
 
-       
-        <h4>Add New Character</h4>
-        <form id="character-form">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div>
-            <label for="image-url">Image URL</label>
-            <input type="text" id="image-url" name="image-url" />
-          </div>
-          <input type="submit" value="Add Character" />
-        </form> 
-      
+      <h4>Add New Character</h4>
+      <form id="character-form">
+        <div>
+          <label for="new-name">Name</label>
+          <input type="text" id="new-name" name="name" />
+        </div>
+        <div>
+          <label for="image-url">Image URL</label>
+          <input type="text" id="image-url" name="image-url" />
+        </div>
+        <input type="submit" value="Add Character" />
+      </form>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
+
